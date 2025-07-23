@@ -3,10 +3,11 @@
 export default {
   content: [
     "./index.html",
-    "./app.jsx",   // <--- ADD THIS LINE
-    "./main.jsx",  // <--- ADD THIS LINE
-    // Remove "./src/**/*.{js,ts,jsx,tsx}" if you don't have a src folder with other component files.
-    // If you do have other components in src, keep it.
+    "./app.jsx",   // <--- THIS MUST BE PRESENT
+    "./main.jsx",  // <--- THIS MUST BE PRESENT
+    // REMOVE "./src/**/*.{js,ts,jsx,tsx}", if you don't have a 'src' folder with other components.
+    // If you DO have other component files in a 'src' folder, then keep this line:
+    // "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
