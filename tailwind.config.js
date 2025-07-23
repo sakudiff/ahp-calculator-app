@@ -3,11 +3,8 @@
 export default {
   content: [
     "./index.html",
-    "./app.jsx",   // <--- THIS MUST BE PRESENT
-    "./main.jsx",  // <--- THIS MUST BE PRESENT
-    // REMOVE "./src/**/*.{js,ts,jsx,tsx}", if you don't have a 'src' folder with other components.
-    // If you DO have other component files in a 'src' folder, then keep this line:
-    // "./src/**/*.{js,ts,jsx,tsx}",
+    "./*.{js,jsx,ts,tsx}", // <--- New: Scan JS/JSX/TS/TSX directly in root
+    "./src/**/*.{js,jsx,ts,tsx}", // <--- New: Scan any files in a 'src' folder (common React pattern)
   ],
   theme: {
     extend: {},
