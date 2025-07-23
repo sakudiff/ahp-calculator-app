@@ -1,6 +1,8 @@
+// main.jsx
+import './index.css'; // Or whatever your main CSS file is named, and its correct relative path
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Import from 'react-dom/client' for React 18+/19
-import App from './app.jsx'; // Correctly import your App component
+import ReactDOM from 'react-dom/client';
+import App from './app.jsx'; // Assuming app.jsx is in the same directory as main.jsx
 
 // Get the root DOM element from index.html
 const rootElement = document.getElementById('root');
