@@ -2,9 +2,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/', // <--- CHANGE THIS LINE! This tells Vite your app is served from the root.
+  base: '/', // This is critical for Netlify to find your assets at the root of the deployed site.
   plugins: [react()],
   build: {
     outDir: 'dist',
